@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/comunas', [ComunaController::class, 'index']);
+Route::get('/comunas/create', [ComunaController::class, 'create'])->name('comunas.create');
